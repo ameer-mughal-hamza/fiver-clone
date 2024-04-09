@@ -1,17 +1,21 @@
 import Featured from '@components/Featured/Featured';
 import TrustedBy from '@components/TrustedBy/TrustedBy';
 import './Home.scss';
+import Slide from '@components/Slide/Slide';
+import { cards, projects } from '../../../data';
+import CategoryCard from '@components/CategoryCard/CategoryCard';
+import ProjectCard from '@components/ProjectCard/ProjectCard';
 
 const Home = () => {
   return (
     <div className="home">
       <Featured />
       <TrustedBy />
-      {/* <Slide slidesToShow={5} arrowsScroll={5}>
+      <Slide>
         {cards.map((card) => (
-          <CatCard key={card.id} card={card} />
+          <CategoryCard key={card.id} card={card} />
         ))}
-      </Slide> */}
+      </Slide>
       <div className="features">
         <div className="container">
           <div className="item">
@@ -179,11 +183,11 @@ const Home = () => {
           </div>
         </div>
       </div>
-      {/* <Slide slidesToShow={4} arrowsScroll={4}>
+      <Slide itemsCount={3}>
         {projects.map((card) => (
           <ProjectCard key={card.id} card={card} />
         ))}
-      </Slide> */}
+      </Slide>
     </div>
   );
 };

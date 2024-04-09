@@ -1,11 +1,11 @@
-type Card = {
+export type Card = {
   id: number;
   title: string;
   desc: string;
   img: string;
 };
 
-type Gigs = {
+export type Gigs = {
   id: number;
   img: string;
   pp: string;
@@ -15,7 +15,7 @@ type Gigs = {
   username: string;
 };
 
-type Project = {
+export type Project = {
   id: number;
   img: string;
   pp: string;
